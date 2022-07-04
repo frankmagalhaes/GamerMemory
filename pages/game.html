@@ -1,18 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Memory login</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/game.css">
     <script defer src="../js/game.js"></script>
 
 </head>
+
 <body>
-    <div class="container">
-     
+    <div class="container-main">
+        <div class="_player-content">
+            <div class="top"></div>
+            <div class="temp">
+                <p>Time-Left: <span id="temporizador">60</span></p>
+            </div>
+        </div>
+        <div class="container"></div>
     </div>
+
+    <section class="win-game-modal" id="modal">
+
+        <div class="modal">
+
+            <div class="modal-content">
+                <img class="modal-close" src="../images/memoria-lol/k.png">
+                <button class="btn play-again-btn" type="submit">PLAY-AGAIN</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="lose-game-modal" id="lose">
+
+        <div class="lose">
+
+            <div class="modal-content-lose">
+                <img class="modal-losed" src="../images/memoria-lol/k.png">
+                <button class="btn play-again-btn" type="submit">PLAY-AGAIN</button>
+            </div>
+        </div>
+
+    </section>
+
 </body>
+
 </html>
