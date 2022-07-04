@@ -1,0 +1,29 @@
+@media  (min-width:320px ) and (max-width:480px){
+    .lose,
+    .modal {
+        width: 350px;
+        height: 300px;
+    }
+
+    ._player-content{
+        width: 350px;
+        display: block;
+        margin-bottom: 1em;  
+    }
+    .container{
+        margin-bottom: 10em;
+    }
+      
+    .login-form {
+        width: 200px;
+        height: 200px;
+        
+    }
+
+    .container-main{
+        padding: 15px;
+    }
+}
+
+
+

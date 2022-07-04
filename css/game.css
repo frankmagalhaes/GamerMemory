@@ -102,6 +102,7 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 8px;
+
 }
 
 .modal {
@@ -154,11 +155,14 @@ body {
     border: 2px solid #34223f;
 }
 
-.modal-close:hover,
-.modal-close:focus {
+.modal-close:hover
+ {
     box-shadow: 4px 4px 0px #34223f;
     color: #34223f;
     text-decoration: none;
     cursor: pointer;
+    transform: scale(1.05);
+}
+.modal-losed:hover{
     transform: scale(1.05);
 }

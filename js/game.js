@@ -5,6 +5,7 @@ const temp = document.getElementsByName("temporizador");
 const model = document.querySelector('.modal-content');
 const lose = document.querySelector('.lose-game-modal')
 
+
 let temporizador = document.getElementById('temporizador');
 
 const champs = [
@@ -28,20 +29,26 @@ getPlayer = () => {
 getPlayer();
 
 
-let ativerIntervalo = function () {
-    temporizador.innerHTML = 75;
+
+temporizador.innerHTML = 80;
+
     let intervalo = setInterval(function () {
         let novoValor = parseInt(temporizador.innerHTML, 10) - 1;
         temporizador.innerHTML = novoValor;
         if (novoValor === 0) {
-
             clearInterval(intervalo);
             loseModal()
-
-        }
+        }     
     }, 1000);
+
+
+
+const stopTimeout = function() {
+    clearInterval(intervalo);
 };
-ativerIntervalo();
+
+
+
 
 function loseModal() {
     const modalClose = document.getElementsByClassName("modal-losed")[0];
@@ -50,12 +57,14 @@ function loseModal() {
 
     modalClose.onclick = function () {
         lose.style.visibility = "hidden";
-        window.location = 'index.html';
+
     };
 
-    window.onclick = function (event) {
-        if (event.target == lose) {
+
+    modalClose.onclick = function (event) {
+        if (event.target == modalClose) {
             lose.style.visibility = "hidden";
+            window.location = '../index.html'
         }
     };
 }
@@ -63,19 +72,22 @@ function loseModal() {
 function displayModal() {
     const modalClose = document.getElementsByClassName("modal-close")[0];
     modal.style.visibility = "visible";
-
+    
+    stopTimeout();
 
     modalClose.onclick = function () {
         modal.style.visibility = "hidden";
-        window.location = 'index.html';
+
     };
 
     window.onclick = function (event) {
-        if (event.target == modal) {
+        if (event.target == modalClose) {
             modal.style.visibility = "hidden";
+            window.location = '../index.html'
+
         }
     };
-    console.log(event.target);
+
 }
 
 const createElement = (tag, className) => {
@@ -92,6 +104,7 @@ const checkEndGame = () => {
 
     if (disabledCards.length === 20) {
         displayModal();
+        stopTimeout();
     }
 }
 
@@ -173,12 +186,13 @@ const loadGame = () => {
 
 loadGame();
 
-const modalSubmit = (event) => {
+const form = document.querySelector('.game-form')
+
+const playSubmit = (event) => {
     event.preventDefault();
 
-    window.location = 'game.html';
+
+    window.location.href = './game.html';
+
 }
-
-lose.addEventListener('click', modalSubmit);
-model.addEventListener('click', modalSubmit);
-
+form.addEventListener('submit', playSubmit);
