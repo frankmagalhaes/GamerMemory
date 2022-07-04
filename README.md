@@ -9,10 +9,10 @@ Jogo da memória com tema de League of Legends feito com HTML, CSS e JavaScript
   <img alt="Layout da aplicação" width="50%" src="https://github.com/frankmagalhaes/memory-gamerLOL/blob/master/images/memoria-lol/referencer/game.jpg"/>
 </p>
 
-p align="center">
+<p align="center">
   <img alt="Layout da aplicação" width="50%" src="https://github.com/frankmagalhaes/memory-gamerLOL/blob/master/images/memoria-lol/referencer/victory.jpg"/>
 </p>
-p align="center">
+<p align="center">
   <img alt="Layout da aplicação" width="50%" src="https://github.com/frankmagalhaes/memory-gamerLOL/blob/master/images/memoria-lol/referencer/defeat.jpg"/>
 </p>
 
@@ -23,38 +23,21 @@ O intuito foi desenvolver um jogo interativo da memória com tematica de league 
 Direcionado ao jogo ele precisa acertar os pares antes que o tempo acabe.Caso consiga aparecer Vitória,caso contrario Defeat.
 
 
-### Funcionalidades
-
-- [x] **Listagem dos pokémons**: Listar os pokémons com o uso da API REST.
-
-- [x] **Buscar pokémons**: Método para filtrar os pokémons a partir do seu nome.
-
-- [x] **Selecionar pokémon**: Criar uma página na aplicação com mais detalhes sobre o pokémon escolhido.
-
-- [x] **Criar seções do pokémons**: Separar as informações do pokémon em três seções: Sobre, Estatísticas, Evoluções.
-
-- [x] **Seção Sobre**: Dados básicos sobre o pokémon, como altura, peso, fraquezas.
-
-- [x] **Seção Estatísticas**: Pontos de batalha do pokémon, como vida, ataque, defesa, velocidade, especial ataque e especial defesa.
-
-
 ### Conceitos abordados
 
-- Uso de flexbox para alinhar e ajustar elementos na página.
+- Uso de grid-template alinhar e ajustar elementos na página.
 
-- Consumo de api .
+- [x] CSS responsivo.
 
-- Conceitos de tipagem no typescript.
+- [x] Uso de javascript vanila.
 
-- Controle de paginação na listagem dos pokémons e filtro por nome.
+- [x] Grid-Templante para os containers de cards..
 
-- Uso LazyLoad para melhor perfomance.
+- [x] Armazenamento no localstorage.
 
-### Notas
+- [x] Pequena validaçao do input para habilitar o button
 
-- A listagem dos pokémons foi limitada em 100.
-- Nao aprofundei tanto na parte visual do pokedex,devido o foco ser o consumo da api e a renderizar na tela as requisiçoes.
-
+- [x] Uso de modais para Resultado de vitória ou derrota.
 
 ## Tecnologias
 
