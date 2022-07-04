@@ -41,8 +41,9 @@ Direcionado ao jogo ele precisa acertar os pares antes que o tempo acabe.Caso co
 
 ## Tecnologias
 
--  [Angular](https://angular.io/)
--  [TypeScript](https://www.typescriptlang.org/)
+-  HTML
+-  CSS
+-  JAVASCRIPT
 
 
 ## 📝 Licença
