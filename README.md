@@ -19,8 +19,8 @@ Jogo da memória com tema de League of Legends feito com HTML, CSS e JavaScript
 ## 💻 Projeto
 Projeto foi desenvolvido como forma de estudos e arquivo pessoal.
 
-O intuito foi desenvolver um jogo interativo da memória com tematica de league of legends.O jogo da inicio a tela de login onde o usuario coloca seu nome("invocador").
-Direcionado ao jogo ele precisa acertar os pares antes que o tempo acabe.Caso consiga aparecer Vitória,caso contrario Defeat.
+O intuito foi desenvolver um jogo interativo da memória com a temática de league of legends.O jogo da inicio a tela de login onde o usuario coloca seu nome("invocador").
+Direcionado ao jogo, ele precisa acertar os pares antes que o tempo acabe.Em caso de vitória ou derrota um Modal irá aparecer com botao de jogar novamente.
 
 
 ### Conceitos abordados
